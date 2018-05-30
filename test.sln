@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GZipTest", "GZipTest\GZipTest.csproj", "{BEF54025-28AC-4843-941A-40F698AFF48F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEF54025-28AC-4843-941A-40F698AFF48F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEF54025-28AC-4843-941A-40F698AFF48F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEF54025-28AC-4843-941A-40F698AFF48F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEF54025-28AC-4843-941A-40F698AFF48F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DF747EB-D070-4E79-B81D-CA1C7CAB0DE3}
+	EndGlobalSection
+EndGlobal
