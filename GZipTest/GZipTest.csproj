@@ -48,7 +48,7 @@
   <ItemGroup>
     <Compile Include="GZipConstants.cs" />
     <Compile Include="GZipCompressor.cs" />
-    <Compile Include="ParallerFileProcessor.cs" />
+    <Compile Include="ParallelFileProcessor.cs" />
     <Compile Include="GZipDecompressor.cs" />
     <Compile Include="SimpleBlockingQueue.cs" />
     <Compile Include="Program.cs" />

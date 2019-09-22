@@ -4,7 +4,7 @@ using System.IO.Compression;
 
 namespace GZipTest
 {
-    internal class GZipDecompressor : ParallerFileProcessor
+    internal class GZipDecompressor : ParallelFileProcessor
     {
         private static readonly string _badArchiveMessage = "Архив поврежден!";
         private static readonly int DecompressorThreadCount = Environment.ProcessorCount * 2;

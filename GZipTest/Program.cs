@@ -21,7 +21,7 @@ namespace GZipTest
                 return HandleArgumentsError();
             }
             var s = args[0].Trim();
-            ParallerFileProcessor fileProcessor;
+            ParallelFileProcessor fileProcessor;
             if (string.Equals(s, "decompress", StringComparison.OrdinalIgnoreCase))
             {
                 fileProcessor = new GZipDecompressor();

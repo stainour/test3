@@ -8,7 +8,7 @@ namespace GZipTest
     {
         private bool _allProducersStopped = false;
         private int _liveProducers;
-        private Queue<T> _queue;
+        private readonly Queue<T> _queue;
         private int _waitingConsumers = 0;
 
         public SimpleBlockingQueue(int liveProducers)

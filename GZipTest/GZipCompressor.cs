@@ -4,7 +4,7 @@ using System.IO.Compression;
 
 namespace GZipTest
 {
-    internal class GZipCompressor : ParallerFileProcessor
+    internal class GZipCompressor : ParallelFileProcessor
     {
         private static readonly int CompressorThreadCount = (int)Math.Ceiling(Environment.ProcessorCount * 1.5);
 

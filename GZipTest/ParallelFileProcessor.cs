@@ -5,7 +5,7 @@ using System.Threading;
 
 namespace GZipTest
 {
-    internal abstract class ParallerFileProcessor
+    internal abstract class ParallelFileProcessor
     {
         protected int _currentReadingFileBlockIndex;
         protected int _currentWritingFileBlockIndex;
@@ -17,7 +17,7 @@ namespace GZipTest
         private SimpleBlockingQueue<FileBlock> _processDataToFileQueue;
         private Dictionary<int, FileBlock> _skippedFileBlocks;
 
-        protected ParallerFileProcessor(FileBlock[] freeFileToProcessQueue, FileBlock[] freeProcessDataToFileQueue, int processorCount)
+        protected ParallelFileProcessor(FileBlock[] freeFileToProcessQueue, FileBlock[] freeProcessDataToFileQueue, int processorCount)
         {
             ProcessorThreadsCount = processorCount;
             _processDataToFileQueue = new SimpleBlockingQueue<FileBlock>(ProcessorThreadsCount);
