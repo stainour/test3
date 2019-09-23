@@ -141,8 +141,8 @@ namespace GZipTest
                     {
                         var freeBlock = _freeFileToProcessQueue.Dequeue();
                         freeBlock.Index = _currentReadingFileBlockIndex;
-                        var readedBytes = ReadSourceFile(fileStream, freeBlock);
-                        if (readedBytes == 0)
+                        var bytesRead = ReadSourceFile(fileStream, freeBlock);
+                        if (bytesRead == 0)
                             break;
                         _fileToProcessQueue.Enqueue(freeBlock);
                         ++_currentReadingFileBlockIndex;

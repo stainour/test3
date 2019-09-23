@@ -27,11 +27,11 @@ namespace GZipTest
 
         protected override int ReadSourceFile(FileStream fileStream, FileBlock freeFileBlock)
         {
-            int bytesReaded;
+            int bytesRead;
 
-            if ((bytesReaded = fileStream.Read(_blockSizeBuffer, 0, GZipConstants.BlockSizeSize)) < GZipConstants.BlockSizeSize)
+            if ((bytesRead = fileStream.Read(_blockSizeBuffer, 0, GZipConstants.BlockSizeSize)) < GZipConstants.BlockSizeSize)
             {
-                if (bytesReaded == 0)
+                if (bytesRead == 0)
                 {
                     return 0;
                 }
